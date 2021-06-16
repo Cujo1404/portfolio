@@ -1,5 +1,6 @@
 body {
     margin:0;
+    padding: 0;
     background-color: white;
     font-family: 'Oxygen', sans-serif;
   }
@@ -129,14 +130,23 @@ body {
 }
 
 
+
+
+/* -------------------  footer ------------------ */
+
 .footer {
     background-color: white;
+}
+
+.footerPostition {
     position: relative;
     top: 100vh;
 }
+
 .backToTop {
-    height: 500px;
+    height: 250px;
     font-size: 20px;
+    border-left: 4px solid black;
 }
 
 .backToTop:hover {
@@ -148,7 +158,8 @@ body {
   }
 
 .footerText {
-    height: 500px;
+    height: 250px;
+    
 }
 
 .topBtn {
@@ -161,4 +172,116 @@ margin-left: 0;
 margin-right: 6px;
 margin-bottom: 0;
     line-height: 0;
+}
+
+.fuckBootstrap {
+    height: 100vh;
+
+}
+
+
+.socialIcons {
+    list-style: none;
+    padding-left: 6rem;
+}
+
+.socialIcons li{
+    display: inline;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    color: black;
+}
+
+.socialIcons i{
+    padding: 15px;
+    margin: 10px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .emailbtm, .phonebtm, .locationbtm {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0;
+  }
+
+
+
+
+/* -------------------  About ------------------ */
+
+
+.aboutSection {
+    margin-top: 300px;
+    display: flex;
+    height: 500px;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    justify-content: space-between;
+    background-color: rgb(220, 222, 224);
+
+    /* The image used */
+    background-image: url("../images/img_parallax.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutBackground {
+    background-color: rgba(0,0,0,0.7);
+    height: 500px;
+    overflow: visible;
+    /* width: 50vw; */
+
+    padding-left: 15vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 75%;
+}
+
+.aboutMe {
+    width: 55vw;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+
+.myForm {
+    padding: 5rem 0 3rem 0;
 }
