@@ -65,3 +65,8 @@ if(IsInjected($visitor_email))
 }
 ?>
 
+<?php
+/* Mailhandler for the main email address */
+header ("Location: mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;");
+exit();
+?>

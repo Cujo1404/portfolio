@@ -10,14 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Alexander Little</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler hamburger hamburger--spring"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
           <ul class="navbar-nav">
@@ -40,7 +43,7 @@
 <h1 class="heading1">Hello,</h1>
 <h1 class="heading2">I'm Alexander.</h1>
 
-<P class="textHome">I'm a front-end developer and I make websites.</P>
+<P class="textHome">I'm a front-end developer and I make websites happen.</P>
 </div>
 </div>
 
@@ -53,9 +56,9 @@
         <div class="col">
           <div class="background d-flex align-items-center">
             <div class="">
-      <h1 class="text-light">01</h1><br>
+      <h1 class="text-secondary" style="font-family: 'Benne', serif;">01</h1><br>
       <h1 class="text-light">Dementia Wellington</h1>
-      <p class="text-light">Wordpress Custom Theme</p>
+      <p class="text-secondary">Charity Wordpress Custom Theme</p>
       <a target="blank" class="text-light" href="http://alex.yoobee.site/">Veiw Project</a>
     </div>
   </div>
@@ -72,9 +75,9 @@
     <div class="col">
       <div class="background d-flex align-items-center">
         <div class="">
-      <h1 class="text-light">02</h1><br>
+      <h1 class="text-secondary" style="font-family: 'Benne', serif;">02</h1><br>
       <h1 class="text-light">EV Rentals</h1>
-      <p class="text-light">Hand coded booking website</p>
+      <p class="text-secondary">Hand coded booking website</p>
       <a target="blank" class="text-light" href="#">Veiw Project</a>
     </div>
   </div>
@@ -89,9 +92,9 @@
         <div class="col">
           <div class="background d-flex align-items-center">
             <div class="">
-      <h1 class="text-light">03</h1><br>
+      <h1 class="text-secondary" style="font-family: 'Benne', serif;">03</h1><br>
       <h1 class="text-light">Community Networks Aotearoa</h1>
-      <p class="text-light">Wordpress Custom Theme</p>
+      <p class="text-secondary">Wordpress Custom Theme</p>
       <a target="blank" class="text-light" href="#">Veiw Project</a>
     </div>
   </div>
@@ -104,28 +107,46 @@
 
       
         <div class="row footer footerPostition">
-          <div class="col-7 footerText ">
-            <p><a href="mailto:arlittledesign@gmail.com" class="linkText">arlittledesign@gmail.com</a></p>
-              <p><a href="tel:+64 27 319 6683" class="linkText">+64 027 319 6683</a></p>
-              <p><a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8" class="linkText">Wellignton, New Zealand</a></p>
-          </div>
-          <div class="col-4 footerText">
-            social icons go here
-          </div>
-  
-          <div class="col-1 backToTop d-flex align-items-center" onclick="topFunction()" id="myBtn">
-            <div class="topBtn text-center mx-auto">
-            <p><i class="fas fa-arrow-up"></i>BACK TO TOP</p>
+          <div class="col-11 footerText d-flex align-items-center justify-content-center">
+            <ul class="socialIcons">
+                <li><a target="_blank" href="https://www.facebook.com/arkl3828/"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/arlittledesign/"><i class="fab fa-2x fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/alexander-little-06395813b"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
+                <span class="dropdown">
+                  <button class="dropbtn emailbtm"><i class="fas fa-2x fa-at"></i></button>
+                  <div class="dropdown-content" id="emailDropdown">
+                    <a href="mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> 
+                    
+                  </div>
+                </span>
+                <span class="dropdown">
+                  <button class="dropbtn phonebtm"><i class="fas fa-2x fa-phone-alt"></i></button>
+                  <div class="dropdown-content" id="phoneDropdown">
+                    <a href="tel:&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;">&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;</a> 
+                  </div>
+                </span>
+                <span class="dropdown">
+                  <button class="dropbtn locationbtm"><i class="fas fa-2x fa-map-marker-alt"></i></button>
+                  <div class="dropdown-content" id="locationDropdown">
+                    <a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8">Wellington, New Zealand</a>
+                  </div>
+                </span>
+            </ul>
           </div>
 
-          </div>
+        <div class="col-1 backToTop d-flex align-items-center text-center" onclick="topFunction()" id="myBtn">
+          <div class="topBtn text-center mx-auto">
+          <p><i class="fas fa-arrow-up"></i>BACK TO TOP</p>
         </div>
 
-        <footer id="colophon" class="site-footer bg-dark footerPostition">
-          <div class="site-info text-center text-white">
-          <h6 class="p-2">Copyright @ 2021 Alexander Little</h6>
-          </div><!-- .site-info -->
-         </footer><!-- #colophon -->
+        </div>
+      </div>
+
+      <footer id="colophon" class="site-footer bg-dark footerPostition">
+        <div class="site-info text-center text-white">
+        <h6 class="p-2">Copyright @ 2021 Alexander Little</h6>
+        </div><!-- .site-info -->
+       </footer><!-- #colophon -->
      
 
       

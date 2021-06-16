@@ -9,11 +9,23 @@ body {
     scroll-behavior: smooth;
   }
 
-
+/* -------------------  nav ------------------ */
 
 .nav-item a:hover {
     text-decoration: underline;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* -------------------  home ------------------ */
 
 .heading1, .heading2 {
     font-family: 'Benne', serif;
@@ -23,9 +35,6 @@ body {
 .textHome {
     font-size: 25px;
 }
-
-
-
 
   .fixed {
     position: fixed;
@@ -175,7 +184,7 @@ margin-bottom: 0;
 }
 
 .fuckBootstrap {
-    height: 100vh;
+    height: auto;
 
 }
 
@@ -188,6 +197,9 @@ margin-bottom: 0;
 .socialIcons li{
     display: inline;
 }
+.socialIcons a:hover{
+    color: grey;
+}
 
 .socialIcons a{
     text-decoration: none;
@@ -198,33 +210,42 @@ margin-bottom: 0;
     padding: 15px;
     margin: 10px;
 }
-
-
-.dropdown-content {
+  
+.dropbtn {
+    background-color: #04AA6D;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
-  .dropdown-content a {
-    float: none;
+  .dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
-  }
+    }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+  .dropdown-content a:hover {background-color: #ddd;}
   
-  .show {
-    display: block;
-  }
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color: grey;}
+
 
   .emailbtm, .phonebtm, .locationbtm {
     border: none;
@@ -233,14 +254,62 @@ margin-bottom: 0;
     padding: 0;
   }
 
+  .site-info h6 {
+      margin: 0;
+  }
+
+    span.rev { unicode-bidi:bidi-override; direction:rtl }
+    span.rev.email:before { content:"moc.etisbew" }
+    span.rev.email:after { content:"@nhoj :liamE" }
+    span.rev.phone:before { content:"3866 913 " }
+    span.rev.phone:after { content:" 46+" }
 
 
 
 /* -------------------  About ------------------ */
 
 
+.languages {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.languages li{
+    display: inline;
+}
+
+.languages i{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.programs {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.programs li{
+    display: inline;
+}
+
+.programs i{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+.programs a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
 .aboutSection {
-    margin-top: 300px;
+    margin-top: 58px;
     display: flex;
     height: 500px;
     padding-right: 0vw;
@@ -261,20 +330,29 @@ margin-bottom: 0;
 }
 
 .aboutBackground {
-    background-color: rgba(0,0,0,0.7);
+    /* background-color: rgba(0,0,0,0.7);
     height: 500px;
     overflow: visible;
     /* width: 50vw; */
 
+    /* padding-left: 15vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 75%; */
+
+    background-color: rgba(0,0,0,0.7);
+    height: 500px;
+    /* width: 50vw; */
+    padding-right: 10vw;
     padding-left: 15vw;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
-    width: 75%;
 }
 
 .aboutMe {
-    width: 55vw;
+    width: 28vw;
 }
 
 .navbar-light .navbar-toggler {
@@ -285,3 +363,8 @@ margin-bottom: 0;
 .myForm {
     padding: 5rem 0 3rem 0;
 }
+
+.about, .languageExp, .programSkills, .education, .work {
+    margin-bottom: 50px;
+}
+

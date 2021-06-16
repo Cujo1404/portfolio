@@ -10,14 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Alexander Little</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler hamburger hamburger--spring"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
           <ul class="navbar-nav">
@@ -43,7 +46,7 @@
                 <div class="aboutInfo">
 
           <p class="text-light">Alexander Little</p>
-          <h1 class="text-light aboutMe">I'm a front-end developer based in Wellington, New Zealand interested in resposive web design and modern designs</h1>
+          <h1 class="text-light aboutMe">I'm a front-end developer based in Wellington, New Zealand who loves design and the internet sphere</h1>
         </div>
       </div>
       </div>
@@ -52,87 +55,99 @@
       </div>
     </div>
 
-<div class="w-50 mx-auto bg-light fuckBootstrap">
+<div class="w-50 mx-auto bg-white fuckBootstrap">
 
+  <div class="about mt-5">
     <h1>About Me</h1>
-<p>Talk about yourself, your work, your Social Security number, and your mom’s maiden name. No, wait, not those last two.</p>
-    <h1>Languages</h1>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-        <li>PHP</li>
-    </ul>
+<p>I enjoy complex problems and turning them into simple and beautiful interface designs. I also love the logic and structure of coding and always strive to write elegant and efficient code, whether it be in HTML, CSS or jQuery.</p>
+<p>When I'm not coding or pushing pixels you'll find me exploring the Greater Wellignton Region or repairing vintage computers.</p>
+</div>
 
+<div class="languageExp">
+    <h1>Language Exposure</h1>
+    <ul class="languages">
+        <li><i class="fab fa-5x fa-html5" alt="HTML 5 Icon" title="HTML 5"></i></li>
+        <li><i class="fab fa-5x fa-css3-alt" alt="CSS 3 Icon" title="CSS 3"></i></li>
+        <li><i class="fab fa-5x fa-js" alt="Javascript Icon" title="Javascript"></i></li>
+        <li><i class="fab fa-5x fa-sass" alt="SASS Icon" title="SASS"></i></li>
+        <li><i class="fab fa-5x fa-bootstrap" alt="bootstrap Icon" title="Bootstrap"></i></li>
+    </ul>
+  </div>
+  <div class="programSkills">
     <h1>Program Skills</h1>
-    <ul>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-        <li>Indesign</li>
+    <ul class="programs">
+        <li><a target="_blank" href="https://icons8.com/icon/60629/adobe-photoshop"><img src="https://img.icons8.com/ios-glyphs/100/000000/adobe-photoshop.png" alt="Adobe Photoshop icon" title="Adobe Photoshop icon by Icons8"/></a></li>
+        <li><a target="_blank" href="https://icons8.com/icon/13631/adobe-illustrator"><img src="https://img.icons8.com/ios-glyphs/100/000000/adobe-illustrator.png" alt="Adobe illustrator icon" title="Adobe illustrator icon by Icons8"/></a></li>
+        <li><a target="_blank" href="https://icons8.com/icon/101693/adobe-indesign"><img src="https://img.icons8.com/ios-glyphs/100/000000/adobe-indesign.png" alt="Adobe Indesign icon" title="Adobe Indesign icon by Icons8"/></a></li>
     </ul>
+  </div>
 
-    <h1>Work Experience</h1>
+    <div class="education">
+    <h1>Education</h1>
     <ul>
         <li>
-            <h4>EB Games</h4>
-            <p></p>
+            <h4>Level 6 Diploma in Web and UX Design</h4>
+            <p>2021 Yoobee</p>
         </li>   
         <li>
-            <h4>Uber</h4>
-            <p></p>
-        </li>  
+             <h4>Level 6 Diploma in Digital Design</h4>
+            <p>2020 Yoobee</p>
+        </li>
         <li>
-            <h4>Countdown</h4>
-            <p></p>
+            <h4>Level 5 Diploma in Web and Graphic</h4>
+            <p>2018 Yoobee</p>
         </li>  
     </ul>
+  </div>
+
+    <div class="work">
+    <h1>Work Experience</h1>
+    <ul>
+          <li>
+            <h4>Uber</h4>
+            <p>2018-present</p>
+        </li>  
+        <li>
+            <h4>EB Games</h4>
+            <p>2019-2021</p>
+        </li>   
+        <li>
+            <h4>Countdown</h4>
+            <p>2015-2020</p>
+        </li>  
+    </ul>
+  </div>
 
 </div>
 
 
 
-      
-        <!-- <div class="row footer">
-          <div class="col-11 footerText d-flex align-items-center justify-content-center">
-            <ul class="socialIcons">
-                <li><a href="#"><i class="fab fa-2x fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-2x fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-2x fa-linkedin-in"></i></a></li>
-                <li><a href="mailto:arlittledesign@gmail.com"><i class="fas fa-2x fa-at"></i></a></li>
-                  <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Link 1</a>
-                  </div>
-                <li><a href="tel:+64 27 319 6683"><i class="fas fa-2x fa-phone-alt"></i></a></li>
-                  <div class="dropdown-content" id="myDropdown">
-                    <a href="tel:+64 27 319 6683">+64 27 319 6683</a>
-                  </div>
-                <li><a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8"><i class="fas fa-2x fa-map-marker-alt"></i></a></li>
-                  <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Link 1</a>
-                  </div>
-            </ul>
-          </div> -->
-
-          <!-- just use show and hide alex -->
+    
 
           <div class="row footer">
             <div class="col-11 footerText d-flex align-items-center justify-content-center">
               <ul class="socialIcons">
-                  <li><a href="#"><i class="fab fa-2x fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fab fa-2x fa-instagram"></i></a></li>
-                  <li><a href=""><i class="fab fa-2x fa-linkedin-in"></i></a></li>
-                  <li><button class="emailbtm"><i class="fas fa-2x fa-at"></i></button></li>
-                    <div class="dropdown-content" id="emailbtmDropdown">
-                        <a href="mailto:arlittledesign@gmail.com">arlittledesign@gmail.com</a>
+                  <li><a target="_blank" href="https://www.facebook.com/arkl3828/"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/arlittledesign/"><i class="fab fa-2x fa-instagram"></i></a></li>
+                  <li><a target="_blank" href="https://www.linkedin.com/in/alexander-little-06395813b"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
+                  <span class="dropdown">
+                    <button class="dropbtn emailbtm"><i class="fas fa-2x fa-at"></i></button>
+                    <div class="dropdown-content" id="emailDropdown">
+                      <a href="mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> 
                     </div>
-                  <li><button class="phonebtm"><i class="fas fa-2x fa-phone-alt"></i></button></li>
-                    <div class="dropdown-content" id="phonebtmDropdown">
-                      <a href="tel:+64 27 319 6683">+64 27 319 6683</a>
+                  </span>
+                  <span class="dropdown">
+                    <button class="dropbtn phonebtm"><i class="fas fa-2x fa-phone-alt"></i></button>
+                    <div class="dropdown-content" id="phoneDropdown">
+                      <a href="tel:&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;">&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;</a> 
                     </div>
-                  <li><button class="locationbtm"><i class="fas fa-2x fa-map-marker-alt"></i></button></li>
-                    <div class="dropdown-content" id="locationbtmDropdown">
-                        <a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8">Wellington, New Zealand</a>
+                  </span>
+                  <span class="dropdown">
+                    <button class="dropbtn locationbtm"><i class="fas fa-2x fa-map-marker-alt"></i></button>
+                    <div class="dropdown-content" id="locationDropdown">
+                      <a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8">Wellington, New Zealand</a>
                     </div>
+                  </span>
               </ul>
             </div>
   
@@ -149,22 +164,6 @@
           <h6 class="p-2">Copyright @ 2021 Alexander Little</h6>
           </div><!-- .site-info -->
          </footer><!-- #colophon -->
-
-         <script>/* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("emailbtmDropdown").classList.toggle("show");
-              }
-              
-              // Close the dropdown if the user clicks outside of it
-              window.onclick = function(e) {
-                if (!e.target.matches('.emailbtm')) {
-                var emailbtmDropdown = document.getElementById("emailbtmDropdown");
-                  if (emailbtmDropdown.classList.contains('show')) {
-                    emailbtmDropdown.classList.remove('show');
-                  }
-                }
-              }</script>
      
 
       

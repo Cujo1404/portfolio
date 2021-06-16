@@ -19,50 +19,40 @@ function topFunction() {
 }
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("emailbtmDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.emailbtm')) {
-    var emailbtmDropdown = document.getElementById("emailbtmDropdown");
-      if (emailbtmDropdown.classList.contains('show')) {
-        emailbtmDropdown.classList.remove('show');
-      }
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      $(".emailbtm").click(function(){
+        $("#emailDropdown").show();
+      
+        // $("#locationDropdown").hide();
+        // $("#phoneDropdown").hide();
+      
+      });
+      
+      $(".phonebtm").click(function(){
+        $("#phoneDropdown").show();
+      
+        // $("#emailDropdown").hide();
+        // $("#locationDropdown").hide();
+      
+      });
+      
+      $(".locationbtm").click(function(){
+        $("#locationDropdown").show();
+      
+        // $("#emailDropdown").hide();
+        // $("#phoneDropdown").hide();
+      
+      });
+    } else {
+     
     }
   }
-
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("phonebtmDropdown").classList.toggle("show");
-  }
   
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.phonebtm')) {
-    var phonebtmDropdown = document.getElementById("phonebtmDropdown");
-      if (phonebtmDropdown.classList.contains('show')) {
-        phonebtmDropdown.classList.remove('show');
-      }
-    }
-  }
-
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("locationbtmDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.locationbtm')) {
-    var locationbtmDropdown = document.getElementById("locationbtmDropdown");
-      if (locationbtmDropdown.classList.contains('show')) {
-        locationbtmDropdown.classList.remove('show');
-      }
-    }
-  }
+  $(document).ready(function(){
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function(e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
+    });
