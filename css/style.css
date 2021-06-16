@@ -1,0 +1,164 @@
+body {
+    margin:0;
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.heading1, .heading2 {
+    font-family: 'Benne', serif;
+    font-size: 11vw;
+}
+
+.textHome {
+    font-size: 25px;
+}
+
+
+
+
+  .fixed {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wrapper-title {
+    overflow: hidden;
+    width: 100%;
+    margin-right: 0vw;
+    margin-left: 0vw;
+}
+
+.section1 {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    height: 100vh;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    justify-content: space-between;
+    background-color: rgb(220, 222, 224);
+
+    /* The image used */
+    background-image: url("../images/img_parallax.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    height: 100vh;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    justify-content: space-between;
+    background-color: rgb(220, 222, 224);
+
+    /* The image used */
+    background-image: url("../images/pexels-lumn-167699.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3 {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    height: 100vh;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    justify-content: space-between;
+    background-color: rgb(220, 222, 224);
+
+    /* The image used */
+    background-image: url("../images/pexels-pixabay-235621.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    background-color: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    overflow: visible;
+    /* width: 50vw; */
+    padding-right: 10vw;
+    padding-left: 15vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.col {
+    padding: 0;
+}
+
+
+.footer {
+    background-color: white;
+    position: relative;
+    top: 100vh;
+}
+.backToTop {
+    height: 500px;
+    font-size: 20px;
+}
+
+.backToTop:hover {
+    cursor: pointer;
+  }
+
+  .fa-arrow-up {
+      margin-bottom: 15px;
+  }
+
+.footerText {
+    height: 500px;
+}
+
+.topBtn {
+    writing-mode: vertical-rl;
+    color: black;
+}
+
+.topBtn p{
+margin-left: 0;
+margin-right: 6px;
+margin-bottom: 0;
+    line-height: 0;
+}

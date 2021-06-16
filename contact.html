@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontawesome  -->
+     <script src="https://kit.fontawesome.com/65fddabedd.js" crossorigin="anonymous"></script>
+     <!-- media quaries// -->
+     <!-- <link rel="stylesheet" href="that.css" media="screen and (max-width: 800px)"> -->
+     <!-- bootstrap -->
+     <!-- <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Alexander Little</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="myForm py-5">
+      <h2 class="text-center">LEAVE US A MESSAGE</h2>
+  </div>
+    <form class="myForm p-5" id="section-2" action="https://formsubmit.co/arlittledesign@gmail.com" method="POST">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Second Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label">message</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+            Please enter a message in the textarea.
+        </div>
+        </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+      <button type="submit" class="btn btn-primary" value="Send Form">Send</button>
+      <input type="hidden" name="_next" value="https://juanca99col.github.io/watches-website/thankyou.html">
+      <input type="hidden" name="_subject" value="New submission!">
+</form>
+   
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
