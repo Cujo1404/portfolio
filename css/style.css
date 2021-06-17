@@ -1,19 +1,20 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Oxygen', sans-serif;
-  }
+}
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
 
 /* -------------------  nav ------------------ */
 
 .nav-item a:hover {
     text-decoration: underline;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -27,7 +28,8 @@ body {
 
 /* -------------------  home ------------------ */
 
-.heading1, .heading2 {
+.heading1,
+.heading2 {
     font-family: 'Benne', serif;
     font-size: 11vw;
 }
@@ -36,7 +38,7 @@ body {
     font-size: 25px;
 }
 
-  .fixed {
+.fixed {
     position: fixed;
     display: flex;
     width: 100%;
@@ -64,11 +66,11 @@ body {
     background-color: rgb(220, 222, 224);
 
     /* The image used */
-    background-image: url("../images/img_parallax.jpeg");
+    background-image: url("../images/dementiaWellingtonMockup.jpg");
 
     /* Set a specific height */
     min-height: 500px;
-    
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -87,11 +89,11 @@ body {
     background-color: rgb(220, 222, 224);
 
     /* The image used */
-    background-image: url("../images/pexels-lumn-167699.jpg");
+    background-image: url("../images/45FlatRight.jpg");
 
     /* Set a specific height */
     min-height: 500px;
-    
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -110,11 +112,11 @@ body {
     background-color: rgb(220, 222, 224);
 
     /* The image used */
-    background-image: url("../images/pexels-pixabay-235621.jpg");
+    background-image: url("../images/smartmockups_kq09gp1k.jpg");
 
     /* Set a specific height */
     min-height: 500px;
-    
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -123,7 +125,7 @@ body {
 }
 
 .background {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     min-height: 100vh;
     overflow: visible;
     /* width: 50vw; */
@@ -160,15 +162,15 @@ body {
 
 .backToTop:hover {
     cursor: pointer;
-  }
+}
 
-  .fa-arrow-up {
-      margin-bottom: 15px;
-  }
+.fa-arrow-up {
+    margin-bottom: 15px;
+}
 
 .footerText {
     height: 250px;
-    
+
 }
 
 .topBtn {
@@ -176,10 +178,10 @@ body {
     color: black;
 }
 
-.topBtn p{
-margin-left: 0;
-margin-right: 6px;
-margin-bottom: 0;
+.topBtn p {
+    margin-left: 0;
+    margin-right: 6px;
+    margin-bottom: 0;
     line-height: 0;
 }
 
@@ -194,75 +196,107 @@ margin-bottom: 0;
     padding-left: 6rem;
 }
 
-.socialIcons li{
+.socialIcons li {
     display: inline;
 }
-.socialIcons a:hover{
+
+.socialIcons a:hover {
     color: grey;
 }
 
-.socialIcons a{
+.socialIcons a {
     text-decoration: none;
     color: black;
 }
 
-.socialIcons i{
+.socialIcons i {
     padding: 15px;
     margin: 10px;
 }
-  
+
 .dropbtn {
     background-color: #04AA6D;
     color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a{
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {color: grey;}
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: grey;
+}
 
 
-  .emailbtm, .phonebtm, .locationbtm {
+.emailbtm,
+.phonebtm,
+.locationbtm {
     border: none;
     outline: none;
     background-color: inherit;
     padding: 0;
-  }
+}
 
-  .site-info h6 {
-      margin: 0;
-  }
+.site-info h6 {
+    margin: 0;
+}
 
-    span.rev { unicode-bidi:bidi-override; direction:rtl }
-    span.rev.email:before { content:"moc.etisbew" }
-    span.rev.email:after { content:"@nhoj :liamE" }
-    span.rev.phone:before { content:"3866 913 " }
-    span.rev.phone:after { content:" 46+" }
+.backToTop p:hover {
+    color: grey;
+}
+
+.backToTop i:hover {
+    color: grey;
+}
+
+span.rev {
+    unicode-bidi: bidi-override;
+    direction: rtl
+}
+
+span.rev.email:before {
+    content: "moc.etisbew"
+}
+
+span.rev.email:after {
+    content: "@nhoj :liamE"
+}
+
+span.rev.phone:before {
+    content: "3866 913 "
+}
+
+span.rev.phone:after {
+    content: " 46+"
+}
 
 
 
@@ -275,11 +309,11 @@ margin-bottom: 0;
     margin-bottom: 50px;
 }
 
-.languages li{
+.languages li {
     display: inline;
 }
 
-.languages i{
+.languages i {
     text-decoration: none;
     color: black;
     text-align: center;
@@ -292,17 +326,18 @@ margin-bottom: 0;
     margin-bottom: 50px;
 }
 
-.programs li{
+.programs li {
     display: inline;
 }
 
-.programs i{
+.programs i {
     text-decoration: none;
     color: black;
     text-align: center;
     padding: 15px;
 }
-.programs a{
+
+.programs a {
     text-decoration: none;
     color: black;
     cursor: default;
@@ -318,11 +353,11 @@ margin-bottom: 0;
     background-color: rgb(220, 222, 224);
 
     /* The image used */
-    background-image: url("../images/img_parallax.jpeg");
+    background-image: url("../images/pexels-negative-space-160107.jpg");
 
     /* Set a specific height */
     min-height: 500px;
-    
+
     /* Create the parallax scrolling effect */
     background-position: center;
     background-repeat: no-repeat;
@@ -341,7 +376,7 @@ margin-bottom: 0;
     color: white;
     width: 75%; */
 
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 500px;
     /* width: 50vw; */
     padding-right: 10vw;
@@ -364,7 +399,10 @@ margin-bottom: 0;
     padding: 5rem 0 3rem 0;
 }
 
-.about, .languageExp, .programSkills, .education, .work {
+.about,
+.languageExp,
+.programSkills,
+.education,
+.work {
     margin-bottom: 50px;
 }
-

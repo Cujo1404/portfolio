@@ -2,7 +2,9 @@
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -19,40 +21,40 @@ function topFunction() {
 }
 
 
-  function myFunction(x) {
-    if (x.matches) { // If media query matches
-      $(".emailbtm").click(function(){
-        $("#emailDropdown").show();
-      
-        // $("#locationDropdown").hide();
-        // $("#phoneDropdown").hide();
-      
-      });
-      
-      $(".phonebtm").click(function(){
-        $("#phoneDropdown").show();
-      
-        // $("#emailDropdown").hide();
-        // $("#locationDropdown").hide();
-      
-      });
-      
-      $(".locationbtm").click(function(){
-        $("#locationDropdown").show();
-      
-        // $("#emailDropdown").hide();
-        // $("#phoneDropdown").hide();
-      
-      });
-    } else {
-     
-    }
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $(".emailbtm").click(function () {
+      $("#emailDropdown").show();
+
+      // $("#locationDropdown").hide();
+      // $("#phoneDropdown").hide();
+
+    });
+
+    $(".phonebtm").click(function () {
+      $("#phoneDropdown").show();
+
+      // $("#emailDropdown").hide();
+      // $("#locationDropdown").hide();
+
+    });
+
+    $(".locationbtm").click(function () {
+      $("#locationDropdown").show();
+
+      // $("#emailDropdown").hide();
+      // $("#phoneDropdown").hide();
+
+    });
+  } else {
+
   }
-  
-  $(document).ready(function(){
-    var $hamburger = $(".hamburger");
-    $hamburger.on("click", function(e) {
-      $hamburger.toggleClass("is-active");
-      // Do something else, like open/close menu
-    });
-    });
+}
+
+$(document).ready(function () {
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function (e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
+});
