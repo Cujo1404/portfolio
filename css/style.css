@@ -406,3 +406,46 @@ span.rev.phone:after {
 .work {
     margin-bottom: 50px;
 }
+
+/* -------------------  construction ------------------ */
+
+.constructionSection {
+
+
+}
+
+.right {
+    background-color: #d8fcf8;
+}
+
+.rightComnet {
+    background-color: #c2c880;
+}
+
+.constructionImage {
+    box-shadow: 2px 2px 20px #aaaaaa;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    width: 30vw;
+    height: auto;
+}
+
+.backgroundConstruction {
+    background-color: white;
+    min-height: 100vh;
+    overflow: visible;
+    /* width: 50vw; */
+    padding-right: 10vw;
+    padding-left: 15vw;
+    align-items: center;
+    color: black;
+}
+
+.fa-arrow-left {
+    margin-right: 5px;
+}
+
+.constructionContent p {
+    margin-bottom: 25px;
+}

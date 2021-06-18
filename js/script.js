@@ -58,3 +58,7 @@ $(document).ready(function () {
     // Do something else, like open/close menu
   });
 });
+
+function goBack() {
+  window.history.back();
+}
