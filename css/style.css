@@ -63,7 +63,7 @@ html {
     padding-right: 0vw;
     padding-left: 0vw;
     justify-content: space-between;
-    background-color: rgb(220, 222, 224);
+    background-color: #dddddd;
 
     /* The image used */
     background-image: url("../images/dementiaWellingtonMockup.jpg");
@@ -73,9 +73,10 @@ html {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
 }
 
 .section2 {
@@ -86,7 +87,7 @@ html {
     padding-right: 0vw;
     padding-left: 0vw;
     justify-content: space-between;
-    background-color: rgb(220, 222, 224);
+    background-color: #d7fbf7;
 
     /* The image used */
     background-image: url("../images/45FlatRight.jpg");
@@ -96,9 +97,9 @@ html {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .section3 {
@@ -109,7 +110,7 @@ html {
     padding-right: 0vw;
     padding-left: 0vw;
     justify-content: space-between;
-    background-color: rgb(220, 222, 224);
+    background-color: #c2c880;
 
     /* The image used */
     background-image: url("../images/smartmockups_kq09gp1k.jpg");
@@ -119,9 +120,9 @@ html {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .background {
@@ -185,8 +186,9 @@ html {
     line-height: 0;
 }
 
-.fuckBootstrap {
+.aboutContent {
     height: auto;
+    width: 50%;
 
 }
 
@@ -380,15 +382,15 @@ span.rev.phone:after {
     height: 500px;
     /* width: 50vw; */
     padding-right: 10vw;
-    padding-left: 15vw;
+    padding-left: 10vw;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
 }
 
-.aboutMe {
+/* .aboutMe {
     width: 28vw;
-}
+} */
 
 .navbar-light .navbar-toggler {
     border: none;
@@ -449,3 +451,49 @@ span.rev.phone:after {
 .constructionContent p {
     margin-bottom: 25px;
 }
+
+@media only screen and (max-width: 900px) {
+    .aboutBackground {
+        padding-right: 3vw;
+        padding-left: 6vw;
+    }
+  }
+
+@media only screen and (max-width: 788px) {
+    .fixed {
+        padding-bottom: 13vh;
+    }
+  }
+
+
+@media only screen and (max-width: 760px) {
+    .socialIcons {
+        padding-left: 3rem;
+    }
+    .aboutContent {
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .background {
+        padding-left: 6vw;
+        padding-right: 3vw;
+    }
+    .aboutInfo h1 {
+        font-size: 24px;
+    }
+  }
+
+
+  @media only screen and (max-width: 390px) {
+    .socialIcons {
+        padding-left: 0;
+    }
+    .aboutInfo h1 {
+        font-size: 18px;
+    }
+    .aboutInfo p {
+        font-size: 14px;
+    }
+  }
