@@ -75,7 +75,7 @@ html {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -99,7 +99,7 @@ html {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .section3 {
@@ -122,7 +122,7 @@ html {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .background {
@@ -139,6 +139,43 @@ html {
 
 .col {
     padding: 0;
+}
+
+.parallax-section {
+    position: relative;
+    width: 100%;
+    top: 100vh;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: #c2c880;
+}
+.parallax-child-section {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+}
+
+#frontlashID{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    will-change: transform;
+    z-index: 1;
+}
+.fw-main-row{
+    background-attachment:scroll;
+    background-image: url("../images/smartmockups_kq09gp1k.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -411,10 +448,7 @@ span.rev.phone:after {
 
 /* -------------------  construction ------------------ */
 
-.constructionSection {
 
-
-}
 
 .right {
     background-color: #d8fcf8;
