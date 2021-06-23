@@ -7,7 +7,7 @@
 <!-- compose email message  -->
 
 <?php
-	$email_from = 'arlittledesign@gmail.com';
+	$email_from = 'dd40a3728dc7221bb0e3663faa106e9d';
 
 	$email_subject = "New Form submission";
 
@@ -20,7 +20,7 @@
 
 
 
-  $to = "arlittledesign@gmail.com";
+  $to = "dd40a3728dc7221bb0e3663faa106e9d";
 
   $headers = "From: $email_from \r\n";
 
@@ -67,6 +67,6 @@ if(IsInjected($visitor_email))
 
 <?php
 /* Mailhandler for the main email address */
-header ("Location: mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;");
+header ("Location: mailto:dd40a3728dc7221bb0e3663faa106e9d");
 exit();
 ?>
