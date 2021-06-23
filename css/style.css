@@ -72,12 +72,13 @@ html {
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: contain;
 }
+.no-touch .section1 {
+    background-attachment:fixed;
+ }
 
 .section2 {
     position: relative;
@@ -96,11 +97,13 @@ html {
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
+.no-touch .section2 {
+    background-attachment:fixed;
+ }
 
 .section3 {
     position: relative;
@@ -119,11 +122,13 @@ html {
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
+.no-touch .section3 {
+    background-attachment:fixed;
+ }
 
 .background {
     background-color: rgba(0, 0, 0, 0.7);
