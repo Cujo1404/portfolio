@@ -113,10 +113,10 @@ html {
     padding-right: 0vw;
     padding-left: 0vw;
     justify-content: space-between;
-    background-color: #c2c880;
+    background-color: #c7d3ff;
 
     /* The image used */
-    background-image: url("../images/smartmockups_kq09gp1k.jpg");
+    background-image: url("../images/prelude-mockup.jpg");
 
     /* Set a specific height */
     min-height: 500px;
@@ -387,6 +387,31 @@ span.rev.phone:after {
     cursor: default;
 }
 
+.cv_download {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cv_download li {
+    display: inline;
+}
+
+.cv_download i {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.cv_download a {
+    color: black;
+}
+
+.cv_download a:hover {
+    color: grey;
+}
+
+
 .aboutSection {
     margin-top: 58px;
     display: flex;
@@ -428,6 +453,12 @@ span.rev.phone:after {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
+}
+
+
+.programs, .languages, .cv_download {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* .aboutMe {
@@ -557,5 +588,11 @@ span.rev.phone:after {
         right: 50px;
         top: 100px;
         width: 50vw;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .contactFormContainer {
+        width: 50%;
     }
   }
