@@ -130,6 +130,31 @@ html {
     background-attachment:fixed;
  }
 
+ .section4 {
+    position: relative;
+    top: 100vh;
+    display: flex;
+    height: 100vh;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    justify-content: space-between;
+    background-color: #d5dfeb;
+
+    /* The image used */
+    background-image: url("../images/FreedomCalculator.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.no-touch .section4 {
+    background-attachment:fixed;
+ }
+
 .background {
     background-color: rgba(0, 0, 0, 0.7);
     min-height: 100vh;
