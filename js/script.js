@@ -78,3 +78,8 @@ var supports = (function() {
       }
   }
 })();
+
+Qualtrics.SurveyEngine.addOnReady(function() {
+  $('ScrollButton').hide();
+  setTimeout(function() { jQuery("#ScrollButton").show(); },10000);
+  });

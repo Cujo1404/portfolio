@@ -28,6 +28,9 @@ html {
 
 /* -------------------  home ------------------ */
 
+html {
+    scroll-behavior: smooth;
+  }
 .heading1,
 .heading2 {
     font-family: 'Benne', serif;

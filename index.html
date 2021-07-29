@@ -5,7 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- title -->
-  <title>Alex - Portfolio</title>
+  <title>Alex | Portfolio</title>
+  <meta name="description" content="I'm a front end web developer and I make websites happen.">
+  <meta name="keyword" content="portfolio, javascript, html, developer">
+  <meta property="og:title" content="Alexander Little | Portfolio"/>
+    <!-- Social media meta tags -->
+<meta property="og:description" content="I'm a front end web developer and I make websites happen." />
+<meta property="og:image" content="http://www.arlittledesign.com/portfolio.png"/>
+<meta property="og:url" content="http://www.arlittledesign.com" />
+<meta property="og:type" content="website" />
+    <!-- Twitter meta tags -->
+<meta name="twitter:card" content="portfolio.png" />
+<meta name="twitter:title" content="Alexander Little | Portfolio" />
+<meta name="twitter:description" content="I'm a front end web developer and I make websites happen."/>
+<meta name="twitter:image" content="http://www.arlittledesign.com/portfolio.png"/>
+    <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- bootstrap -->
@@ -54,16 +68,19 @@
   <div class="fixed">
     <div class="wrapper-title container">
       <h1 class="heading1">Hello,</h1>
-      <h1 class="heading2">I'm Alexander.</h1>
+      <h1 class="heading2">world!</h1>
 
-      <P class="textHome">I'm a front-end developer and I make websites happen.</P>
+      <p class="textHome">From rural Aotearoa to the Capital, read more about my story <a href="about.html" class="text-dark">here</a>.</p>
+      <!-- <p class="float-end">scroll to view projects</p> -->
+      <a href="#section1"><i id="ScrollButton" aria-label="prompt to scroll, click to scroll to section 1" class="ScrollButton text-dark fas fa-2x fa-chevron-down float-end"></i></a>
+      
     </div>
   </div>
 
 
 
   <!-- project 1 -->
-  <div class="section1">
+  <div class="section1" id="section1" role="img" aria-label="mock up of my Dementia Wellington website on a macbook">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
@@ -72,6 +89,7 @@
               <h1 class="text-secondary" style="font-family: 'Benne', serif;">01</h1><br>
               <h1 class="text-light">Dementia Wellington</h1>
               <p class="text-secondary">Charity Wordpress Custom Theme</p>
+              <!-- <a class="text-secondary text-decoration-none" href="">Read More</a> -->
               <a target="_blank" class="text-light" href="http://alex.yoobee.site/">Veiw Live Project</a>
             </div>
           </div>
@@ -83,7 +101,7 @@
 
 
   <!-- project 2 -->
-  <div class="section2">
+  <div class="section2" role="img" aria-label="mock up of my EV Rentals website on an iPhone">
     <div class="container-fluid">
       <div class="row">
         <div class="col"></div>
@@ -93,6 +111,7 @@
               <h1 class="text-secondary" style="font-family: 'Benne', serif;">02</h1><br>
               <h1 class="text-light">EV Rentals</h1>
               <p class="text-secondary">Hand coded booking website</p>
+              <!-- <a class="text-secondary text-decoration-none" href="">Read More</a> -->
               <a target="_blank" class="text-light" href="http://alex.yoobee.site/portfolio/EVRentals/">Veiw Live Project</a>
             </div>
           </div>
@@ -103,7 +122,7 @@
 
     <!-- project 3 -->
 
-  <div class="section3">
+  <div class="section3" role="img" aria-label="mock up of the Yoobee Grad Exhibition website on an iMac">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
@@ -112,6 +131,7 @@
               <h1 class="text-secondary" style="font-family: 'Benne', serif;">03</h1><br>
               <h1 class="text-light">Yoobee Grad Exhibition</h1>
               <p class="text-secondary">Collaboratively designed & coded</p>
+              <!-- <a class="text-secondary text-decoration-none" href="">Read More</a> -->
               <a target="_blank" class="text-light" href="http://prelude.yoobee.site">Veiw Live Project</a>
             </div>
           </div>
@@ -122,7 +142,7 @@
   </div>
 
     <!-- project 4 -->
-  <div class="section4">
+  <div class="section4" role="img" aria-label="mock up of my Freedom Calculator prototype on an iPhone">
     <div class="container-fluid">
       <div class="row">
         <div class="col"></div>
@@ -131,8 +151,9 @@
             <div class="">
               <h1 class="text-secondary" style="font-family: 'Benne', serif;">04</h1><br>
               <h1 class="text-light">Freedom Calculator</h1>
-              <p class="text-secondary">Calculator designs with plans to build in react.js</p>
-              <a target="_blank" class="text-light" href="https://www.figma.com/file/uGkITvXjhFMRG1g6wOfxFw/Calculator-app?node-id=0%3A1">Veiw Figma</a>
+              <p class="text-secondary">Calculator designs with plans to build in react.js</p> 
+              <!-- <a class="text-secondary text-decoration-none" href="">Read More</a> -->
+              <a target="_blank" class="text-light" href="https://www.figma.com/file/uGkITvXjhFMRG1g6wOfxFw/Calculator-app?node-id=0%3A1">Veiw Prototype</a>
             </div>
           </div>
         </div>
@@ -147,14 +168,14 @@
   <div class="row footer footerPostition">
     <div class="col-10 col-sm-10	col-md-10	col-lg-11	col-xl-11 footerText d-flex align-items-center justify-content-center">
       <ul class="socialIcons">
-        <li><a target="_blank" href="https://github.com/Cujo1404/"><i class="fab fa-2x fa-github"></i></a>
+        <li><a target="_blank" aria-label="github link, click to open my github in a new tab" href="https://github.com/Cujo1404/"><i class="fab fa-2x fa-github"></i></a>
         </li>
-        <li><a target="_blank" href="https://www.instagram.com/arlittledesign/"><i
+        <li><a target="_blank" aria-label="instagram link, click to open my instagram in a new tab" href="https://www.instagram.com/arlittledesign/"><i
               class="fab fa-2x fa-instagram"></i></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/alexander-little-06395813b"><i
+        <li><a target="_blank"  aria-label="linkedin link, click to open my linkedin in a new tab" href="https://www.linkedin.com/in/alexander-little-06395813b"><i
               class="fab fa-2x fa-linkedin-in"></i></a></li>
         <span class="dropdown">
-          <button class="dropbtn emailbtm"><i class="fas fa-2x fa-at"></i></button>
+          <button aria-label="email link, hover to show my email below" class="dropbtn emailbtm"><i class="fas fa-2x fa-at"></i></button>
           <div class="dropdown-content" id="emailDropdown">
             <a
               href="mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
@@ -162,14 +183,14 @@
           </div>
         </span>
         <span class="dropdown">
-          <button class="dropbtn phonebtm"><i class="fas fa-2x fa-phone-alt"></i></button>
+          <button aria-label="phone link, hover to show my phone below" class="dropbtn phonebtm"><i class="fas fa-2x fa-phone-alt"></i></button>
           <div class="dropdown-content" id="phoneDropdown">
             <a
               href="tel:&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;">&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;</a>
           </div>
         </span>
         <span class="dropdown">
-          <button class="dropbtn locationbtm"><i class="fas fa-2x fa-map-marker-alt"></i></button>
+          <button aria-label="location link, hover to show my city below" class="dropbtn locationbtm"><i class="fas fa-2x fa-map-marker-alt"></i></button>
           <div class="dropdown-content" id="locationDropdown">
             <a target="_blank" href="https://goo.gl/maps/ZR3oA7t2FXUX3jnm8">Wellington, New Zealand</a>
           </div>
