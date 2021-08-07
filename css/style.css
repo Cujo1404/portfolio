@@ -439,6 +439,16 @@ span.rev.phone:after {
     color: grey;
 }
 
+.ul_trade_me{
+    margin-top: -50px;
+}
+
+.trade_me_link:hover{
+    opacity: 0.6;
+}
+
+
+
 
 .aboutSection {
     margin-top: 58px;
