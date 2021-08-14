@@ -68,14 +68,8 @@ html {
     padding-left: 0vw;
     justify-content: space-between;
     background-color: #dddddd;
-
-    /* The image used */
-    background-image: url("../images/dementiaWellingtonMockup.jpg");
-
-    /* Set a specific height */
+    background-image: url("../images/dementia-wellington-mockup.jpg");
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -94,14 +88,8 @@ html {
     padding-left: 0vw;
     justify-content: space-between;
     background-color: #d7fbf7;
-
-    /* The image used */
-    background-image: url("../images/45FlatRight.jpg");
-
-    /* Set a specific height */
+    background-image: url("../images/evrentals-mockup.jpg");
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -120,14 +108,8 @@ html {
     padding-left: 0vw;
     justify-content: space-between;
     background-color: #c7d3ff;
-
-    /* The image used */
     background-image: url("../images/prelude-mockup.jpg");
-
-    /* Set a specific height */
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -146,14 +128,8 @@ html {
     padding-left: 0vw;
     justify-content: space-between;
     background-color: #d5dfeb;
-
-    /* The image used */
-    background-image: url("../images/FreedomCalculator.jpg");
-
-    /* Set a specific height */
+    background-image: url("../images/freedom-calculator.jpg");
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -167,7 +143,6 @@ html {
     background-color: rgba(0, 0, 0, 0.7);
     min-height: 100vh;
     overflow: visible;
-    /* width: 50vw; */
     padding-right: 10vw;
     padding-left: 15vw;
     align-items: center;
@@ -266,7 +241,6 @@ html {
 .aboutContent {
     height: auto;
     width: 50%;
-
 }
 
 
@@ -465,34 +439,16 @@ span.rev.phone:after {
     padding-left: 0vw;
     justify-content: space-between;
     background-color: rgb(220, 222, 224);
-
-    /* The image used */
     background-image: url("../images/pexels-negative-space-160107.jpg");
-
-    /* Set a specific height */
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .aboutBackground {
-    /* background-color: rgba(0,0,0,0.7);
-    height: 500px;
-    overflow: visible;
-    /* width: 50vw; */
-
-    /* padding-left: 15vw;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    width: 75%; */
-
     background-color: rgba(0, 0, 0, 0.7);
     height: 500px;
-    /* width: 50vw; */
     padding-right: 10vw;
     padding-left: 10vw;
     align-items: center;
@@ -507,10 +463,6 @@ span.rev.phone:after {
     margin-left: 0;
     padding-left: 0;
 }
-
-/* .aboutMe {
-    width: 28vw;
-} */
 
 .navbar-light .navbar-toggler {
     border: none;
