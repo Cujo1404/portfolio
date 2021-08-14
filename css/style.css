@@ -30,7 +30,8 @@ html {
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 .heading1,
 .heading2 {
     font-family: 'Benne', serif;
@@ -79,9 +80,10 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .no-touch .section1 {
-    background-attachment:fixed;
- }
+    background-attachment: fixed;
+}
 
 .section2 {
     position: relative;
@@ -104,9 +106,10 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .no-touch .section2 {
-    background-attachment:fixed;
- }
+    background-attachment: fixed;
+}
 
 .section3 {
     position: relative;
@@ -129,11 +132,12 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.no-touch .section3 {
-    background-attachment:fixed;
- }
 
- .section4 {
+.no-touch .section3 {
+    background-attachment: fixed;
+}
+
+.section4 {
     position: relative;
     top: 100vh;
     display: flex;
@@ -154,9 +158,10 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .no-touch .section4 {
-    background-attachment:fixed;
- }
+    background-attachment: fixed;
+}
 
 .background {
     background-color: rgba(0, 0, 0, 0.7);
@@ -183,16 +188,17 @@ html {
     justify-content: space-between;
     background-color: #c2c880;
 }
+
 .parallax-child-section {
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height:100vh;
+    height: 100vh;
 }
 
-#frontlashID{
+#frontlashID {
     position: fixed;
     display: block;
     top: 0;
@@ -203,8 +209,9 @@ html {
     will-change: transform;
     z-index: 1;
 }
-.fw-main-row{
-    background-attachment:scroll;
+
+.fw-main-row {
+    background-attachment: scroll;
     background-image: url("../images/smartmockups_kq09gp1k.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -439,11 +446,11 @@ span.rev.phone:after {
     color: grey;
 }
 
-.ul_trade_me{
+.ul_trade_me {
     margin-top: -50px;
 }
 
-.trade_me_link:hover{
+.trade_me_link:hover {
     opacity: 0.6;
 }
 
@@ -494,7 +501,9 @@ span.rev.phone:after {
 }
 
 
-.programs, .languages, .cv_download {
+.programs,
+.languages,
+.cv_download {
     margin-left: 0;
     padding-left: 0;
 }
@@ -565,90 +574,99 @@ span.rev.phone:after {
         padding-right: 3vw;
         padding-left: 6vw;
     }
+
     .constructionImage {
         top: 300px;
     }
-  }
+}
 
 @media only screen and (max-width: 900px) {
     .aboutBackground {
         padding-right: 3vw;
         padding-left: 6vw;
     }
+
     .constructionImage {
         right: 100px;
     }
-  }
+}
 
 @media only screen and (max-width: 788px) {
     .fixed {
         padding-bottom: 13vh;
     }
-  }
+}
 
 
 @media only screen and (max-width: 760px) {
     .socialIcons {
         padding-left: 3rem;
     }
+
     .aboutContent {
         width: 80%;
     }
-  }
+}
 
-  @media only screen and (max-width: 570px) {
+@media only screen and (max-width: 570px) {
     .background {
         padding-left: 6vw;
         padding-right: 3vw;
     }
+
     .aboutInfo h1 {
         font-size: 24px;
     }
+
     .constructionImage {
         right: 100px;
         top: 100px;
         width: 40vw;
     }
-  }
+}
 
 
-  @media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
     .socialIcons {
         padding-left: 0;
     }
+
     .aboutInfo h1 {
         font-size: 18px;
     }
+
     .aboutInfo p {
         font-size: 14px;
     }
+
     .constructionImage {
         right: 50px;
         top: 100px;
         width: 50vw;
     }
-  }
+}
 
-  @media only screen and (min-width: 990px) {
+@media only screen and (min-width: 990px) {
     .contactFormContainer {
         width: 50%;
     }
-  }
+}
 
-  /* -------------------  acknowledgements ------------------ */
-  .acknowledgementsLink {
+/* -------------------  acknowledgements ------------------ */
+.acknowledgementsLink {
     color: white;
     text-decoration: none;
 }
-  .acknowledgementsLink:hover {
-      color: grey;
-  }
 
-  .acknowledgementsHeading {
+.acknowledgementsLink:hover {
+    color: grey;
+}
+
+.acknowledgementsHeading {
     color: black;
     text-decoration: none;
-  }
+}
 
-  .acknowledgementsHeading:hover {
+.acknowledgementsHeading:hover {
     color: grey;
-  }
+}
