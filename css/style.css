@@ -55,8 +55,7 @@ html {
 .wrapper-title {
     overflow: hidden;
     width: 100%;
-    margin-right: 0vw;
-    margin-left: 0vw;
+    margin: 0;
 }
 
 .section1 {
@@ -64,15 +63,11 @@ html {
     top: 100vh;
     display: flex;
     height: 100vh;
-    padding-right: 0vw;
-    padding-left: 0vw;
+    padding: 0;
     justify-content: space-between;
-    background-color: #dddddd;
-    background-image: url("../images/dementia-wellington-mockup.jpg");
-    min-height: 500px;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: #dddddd url("../images/dementia-wellington-mockup.jpg") no-repeat center center;
     background-size: contain;
+    min-height: 500px;
 }
 
 .no-touch .section1 {
@@ -84,14 +79,10 @@ html {
     top: 100vh;
     display: flex;
     height: 100vh;
-    padding-right: 0vw;
-    padding-left: 0vw;
+    padding: 0;
     justify-content: space-between;
-    background-color: #d7fbf7;
-    background-image: url("../images/evrentals-mockup.jpg");
+    background: #d7fbf7 url("../images/evrentals-mockup.jpg") no-repeat center center;
     min-height: 500px;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -104,14 +95,10 @@ html {
     top: 100vh;
     display: flex;
     height: 100vh;
-    padding-right: 0vw;
-    padding-left: 0vw;
+    padding: 0;
     justify-content: space-between;
-    background-color: #c7d3ff;
-    background-image: url("../images/prelude-mockup.jpg");
+    background: #c7d3ff url("../images/prelude-mockup.jpg") no-repeat center center;
     min-height: 500px;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -124,14 +111,11 @@ html {
     top: 100vh;
     display: flex;
     height: 100vh;
-    padding-right: 0vw;
-    padding-left: 0vw;
+    padding: 0;
     justify-content: space-between;
     background-color: #d5dfeb;
-    background-image: url("../images/freedom-calculator-mockup.jpg");
+    background: #d5dfeb url("../images/freedom-calculator-mockup.jpg") no-repeat center center;
     min-height: 500px;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -143,8 +127,7 @@ html {
     background-color: rgba(0, 0, 0, 0.7);
     min-height: 100vh;
     overflow: visible;
-    padding-right: 10vw;
-    padding-left: 15vw;
+    padding: 0 10vw 0 15vw;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
@@ -232,9 +215,7 @@ html {
 }
 
 .topBtn p {
-    margin-left: 0;
-    margin-right: 6px;
-    margin-bottom: 0;
+    margin: 0 6px 0 0;
     line-height: 0;
 }
 
@@ -435,8 +416,7 @@ span.rev.phone:after {
     margin-top: 58px;
     display: flex;
     height: 500px;
-    padding-right: 0vw;
-    padding-left: 0vw;
+    padding: 0;
     justify-content: space-between;
     background-color: rgb(220, 222, 224);
     background-image: url("../images/pexels-negative-space-160107.jpg");
@@ -447,10 +427,8 @@ span.rev.phone:after {
 }
 
 .aboutBackground {
-    background-color: rgba(0, 0, 0, 0.7);
     height: 500px;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding: 0 10vw;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
@@ -471,6 +449,13 @@ span.rev.phone:after {
 
 .myForm {
     padding: 5rem 0 3rem 0;
+}
+
+.form-control {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    border-color: black;
 }
 
 .about,
@@ -507,8 +492,7 @@ span.rev.phone:after {
     min-height: 100vh;
     overflow: visible;
     /* width: 50vw; */
-    padding-right: 10vw;
-    padding-left: 15vw;
+    padding: 0 10vw 0 15vw 0;
     align-items: center;
     color: black;
 }
@@ -523,8 +507,7 @@ span.rev.phone:after {
 
 @media only screen and (max-width: 1050px) {
     .aboutBackground {
-        padding-right: 3vw;
-        padding-left: 6vw;
+        padding: 0 3vw 0 6vw;
     }
 
     .constructionImage {
@@ -534,8 +517,7 @@ span.rev.phone:after {
 
 @media only screen and (max-width: 900px) {
     .aboutBackground {
-        padding-right: 3vw;
-        padding-left: 6vw;
+        padding: 0 3vw 0 6vw;
     }
 
     .constructionImage {
@@ -562,8 +544,7 @@ span.rev.phone:after {
 
 @media only screen and (max-width: 570px) {
     .background {
-        padding-left: 6vw;
-        padding-right: 3vw;
+        padding: 0 3vw 0 6vw;
     }
 
     .aboutInfo h1 {
