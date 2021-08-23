@@ -230,14 +230,6 @@ html {
     padding-left: 6rem;
 }
 
-.socialIcons li {
-    display: inline;
-}
-
-.socialIcons a:hover {
-    color: grey;
-}
-
 .socialIcons a {
     text-decoration: none;
     color: black;
@@ -246,6 +238,14 @@ html {
 .socialIcons i {
     padding: 15px;
     margin: 10px;
+}
+
+.socialIcons li {
+    display: inline;
+}
+
+.socialIcons a:hover {
+    color: grey;
 }
 
 .dropbtn {
