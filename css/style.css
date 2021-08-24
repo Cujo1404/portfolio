@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', 'Verdana', sans-serif;
 }
 
 html {
@@ -34,7 +34,7 @@ html {
 
 .heading1,
 .heading2 {
-    font-family: 'Benne', serif;
+    font-family: 'Benne', 'Georgia', serif;
     font-size: 11vw;
 }
 
@@ -603,3 +603,12 @@ span.rev.phone:after {
 .acknowledgementsHeading:hover {
     color: grey;
 }
+
+/* 
+Dark mode ideation
+p, h1, h2, h3, h4, h5, li, a, i {
+    color: white;
+}
+body {
+    background: grey;
+} */
