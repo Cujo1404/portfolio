@@ -193,7 +193,7 @@ html {
 .backToTop {
     height: 250px;
     font-size: 20px;
-    border-left: 4px solid black;
+    border-left: 4px solid white;
 }
 
 .backToTop:hover {
@@ -222,6 +222,7 @@ html {
 .aboutContent {
     height: auto;
     width: 50%;
+    color: #343a40;
 }
 
 
@@ -596,7 +597,7 @@ span.rev.phone:after {
 }
 
 .acknowledgementsHeading {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -604,11 +605,50 @@ span.rev.phone:after {
     color: grey;
 }
 
-/* 
-Dark mode ideation
-p, h1, h2, h3, h4, h5, li, a, i {
+
+/* dark mode testing */
+
+p, h1, h2, h3, h4, h5, li, a, i, .fa {
     color: white;
 }
 body {
-    background: grey;
-} */
+    background: #343a40;
+}
+
+.here {
+    color: black;
+    color: white;
+}
+
+.ScrollButton {
+    color: white;
+}
+
+.footer {
+    background-color: #343a40;
+}
+
+nav {
+    background-color: #292b2c;
+}
+
+.about, .languageExp, .programSkills, .education, .work, .aboutContent {
+    background-color: #343a40;
+}
+
+.languages li i {
+    color: white;
+}
+
+.cv_download li a img {
+    filter: invert(1);
+}
+
+.programs li a img {
+    filter: invert(1);
+}
+
+label, pre, blockquote, q {
+    color: white;
+}
+
