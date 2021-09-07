@@ -456,7 +456,6 @@ span.rev.phone:after {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-radius: 0;
-    border-color: black;
 }
 
 .about,
@@ -611,44 +610,25 @@ span.rev.phone:after {
 p, h1, h2, h3, h4, h5, li, a, i, .fa {
     color: white;
 }
-body {
-    background: #343a40;
-}
-
-.here {
-    color: black;
-    color: white;
-}
-
-.ScrollButton {
-    color: white;
-}
-
-.footer {
-    background-color: #343a40;
-}
 
 nav {
     background-color: #292b2c;
 }
 
-.about, .languageExp, .programSkills, .education, .work, .aboutContent {
+.about, .languageExp, .programSkills, .education, .work, .aboutContent, body, .footer {
     background-color: #343a40;
 }
 
-.languages li i {
-    color: white;
-}
-
-.cv_download li a img {
+.cv_download li a img, .programs li a img {
     filter: invert(1);
 }
 
-.programs li a img {
-    filter: invert(1);
-}
-
-label, pre, blockquote, q {
+label, pre, blockquote, q, .languages li i, .ScrollButton, .here {
     color: white;
 }
 
+.form-control {
+    background: #343a40;
+    color: white;
+    border-color: white;
+}
