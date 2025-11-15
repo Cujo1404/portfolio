@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alexander & Qing – Wedding Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Yesteryear&display=swap" rel="stylesheet">
+  <style>
+
+    /* Red envelope intro overlay */
+.envelope-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #b31a29 0%, #780000 45%, #3d0000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.envelope-overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.envelope {
+  width: 260px;
+  height: 380px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #b9001f, #800012);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: envelope-pop 1s ease-out forwards;
+}
+
+.envelope::before {
+  /* top flap suggestion */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  background: linear-gradient(160deg, #cf0027, #8f0015);
+  clip-path: polygon(0 0, 100% 0, 50% 65%);
+}
+
+.envelope-inner {
+  width: 80%;
+  height: 70%;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 216, 117, 0.9);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4), transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.envelope-seal {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f7d978 0%, #d4af37 60%, #b68f1b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+}
+
+.envelope-seal span {
+  font-size: 3.4rem;
+  color: #861515;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.envelope-text {
+  margin-top: 1.4rem;
+  font-size: 0.95rem;
+  color: #ffe8a3;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* small glow animation */
+@keyframes envelope-pop {
+  0% {
+    transform: translateY(30px) scale(0.7);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10px) scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #b31a29 0%, #780000 45%, #3d0000 100%);
+      color: #fcecd2;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, #8b0000, #5a0000);
+      border-bottom: 1px solid #d4af37;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before,
+    header::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      border-radius: 16px;
+    }
+
+    header::before {
+      top: -50px;
+      left: -30px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    header::after {
+      bottom: -60px;
+      right: -20px;
+      border-left: none;
+      border-top: none;
+    }
+
+    .lang-toggle {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      z-index: 2;
+    }
+
+    .lang-toggle button {
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid #d4af37;
+      background: rgba(0, 0, 0, 0.35);
+      color: #fcecd2;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .lang-toggle button:hover {
+      background: rgba(212, 175, 55, 0.25);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: #ffdb7c;
+    }
+
+    .subheading {
+      font-size: 1.1rem;
+      color: #f7c75f;
+      margin-bottom: 0.5rem;
+    }
+
+    .date-location {
+      font-size: 1rem;
+      color: #fcecd2;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #d4af37;
+      color: #ffdca8;
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+
+    nav a:hover {
+      background: rgba(212, 175, 55, 0.2);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.2rem;
+      background: radial-gradient(circle at top left, #a8001f 0%, #650010 55%, #45000b 100%);
+      border-radius: 18px;
+      border: 1px solid rgba(212, 175, 55, 0.9);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    section::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: -50px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.18);
+    }
+
+    section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: #ffd875;
+    }
+
+    p {
+      margin-bottom: 0.6rem;
+      color: #fcecd2;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .countdown {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ffe8a3;
+      margin-top: 0.7rem;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .rsvp-form label {
+      display: block;
+      font-weight: 600;
+      margin-top: 0.8rem;
+      margin-bottom: 0.2rem;
+      font-size: 0.95rem;
+      color: #ffe8a3;
+    }
+
+    .rsvp-form input,
+    .rsvp-form select,
+    .rsvp-form textarea {
+      width: 100%;
+      padding: 0.45rem 0.6rem;
+      border-radius: 10px;
+      border: 1px solid #d4af37;
+      font-size: 0.95rem;
+      background: rgba(0, 0, 0, 0.45);
+      color: #fcecd2;
+    }
+
+    .rsvp-form input::placeholder,
+    .rsvp-form textarea::placeholder {
+      color: #c9b48a;
+    }
+
+    .rsvp-form textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .helper-text {
+      font-size: 0.8rem;
+      color: #e6d4aa;
+      margin-top: 0.2rem;
+    }
+
+    .rsvp-form button {
+      margin-top: 1.2rem;
+      padding: 0.7rem 1.7rem;
+      border-radius: 999px;
+      border: 1px solid #f5d16a;
+      background: linear-gradient(145deg, #f5d16a, #d4af37);
+      color: #4d0000;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .rsvp-form button:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.5rem;
+    }
+
+    .photo-grid div {
+      height: 120px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(212, 175, 55, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: #f7d68b;
+    }
+
+    a {
+      color: #ffe8a3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #f0dfb8;
+      border-top: 1px solid rgba(212, 175, 55, 0.6);
+      background: linear-gradient(135deg, #5a0000, #3b0000);
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.9rem;
+      }
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Language display rules */
+    .lang-en { display: block; }
+    .lang-zh { display: none; }
+
+    body[data-lang="zh"] .lang-en { display: none; }
+    body[data-lang="zh"] .lang-zh { display: block; }
+
+    /* Zodiac side silhouettes */
+.zodiac {
+  position:absolute;
+  top: 18%;
+  width: 180px;
+  opacity: 0.60;
+  /* transform: translateY(-50%); */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.zodiac img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.9))
+          brightness(1.2)
+          contrast(1.1);
+}
+
+.zodiac-left {
+  left: 0;
+  /* transform: translateY(-50%) rotateY(180deg); */
+}
+
+.zodiac-right {
+  right: 0;
+}
+
+/* Optional subtle breathing animation */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.90;
+    filter: drop-shadow(0 0 8px rgba(212,175,55,0.4));
+  }
+  50% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 14px rgba(255,220,120,0.8));
+  }
+}
+
+.zodiac img {
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.photo-grid img.gallery-thumb {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-grid img.gallery-thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+/* Lightbox / carousel overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none; /* shown via JS */
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+}
+
+.lightbox-overlay.show {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 14px;
+  border: 1px solid #f5d16a;
+  background: radial-gradient(circle at top, #650010 0%, #2a0000 60%);
+  padding: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+#lightboxImage {
+  display: block;
+  max-width: 80vw;
+  max-height: 75vh;
+  border-radius: 10px;
+  border: 1px solid rgba(245, 209, 106, 0.7);
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fcecd2;
+  cursor: pointer;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Prev / next arrows */
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(245, 209, 106, 0.7);
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffe8a3;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev {
+  left: -0.3rem;
+}
+
+.lightbox-next {
+  right: -0.3rem;
+}
+
+.lightbox-nav:hover,
+.lightbox-close:hover {
+  filter: brightness(1.2);
+}
+
+/* Timer bar at bottom */
+.lightbox-timer {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lightbox-timer-fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #f5d16a, #ffe8a3);
+  transform-origin: left;
+}
+
+.names-zh {       
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  color: #d4af37;
+  font-style: normal;
+}
+
+.names-en {
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  color: #d4af37;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .zodiac {width: 10%;}
+  .names-zh {font-size: 70px;}
+  .names-en {font-size: 70px;}
+}
+
+@media (max-width: 768px) {
+  .zodiac {width: 20%;}
+  .names-zh {font-size: 80px;}
+  .names-en {font-size: 80px;}
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Red envelope intro overlay -->
+  <div id="redEnvelopeOverlay" class="envelope-overlay">
+    <div class="envelope">
+      <div class="envelope-inner">
+        <div class="envelope-seal">
+          <span>囍</span>
+        </div>
+      </div>
+    </div>
+    <div class="envelope-text">
+      <div class="lang-en">Tap to open the red envelope</div>
+      <div class="lang-zh">点击打开红包</div>
+    </div>
+  </div>
+
+  <!-- Zodiac Silhouettes -->
+<div class="zodiac zodiac-left">
+  <img src="./new_images/cow.png" alt="Ox Zodiac" />
+</div>
+<div class="zodiac zodiac-right">
+  <img src="./new_images/bunny.png" alt="Rabbit Zodiac" />
+</div>
+
+
+  <div class="lang-toggle">
+    <button id="langToggle">中文 / English</button>
+  </div>
+
+  <header>
+    <div class="lang-en">
+      <p class="names-en">Alexander &amp; Angela</p>
+      <div class="subheading">Wedding Celebration & Reception</div>
+      <div class="date-location">
+        19 February 2026 · Staglands Wildlife Reserve, Akatarawa Valley, Upper Hutt
+      </div>
+      <div id="countdown" class="countdown"></div>
+    </div>
+    <div class="lang-zh">
+              <p  class="names-zh">Alexander &amp; 万清</p>
+      <!-- <h1>Alexander &amp; 万清</h1> -->
+      <div class="subheading">婚礼邀请</div>
+      <div class="date-location">
+        2026年2月19日 · 新西兰 Upper Hutt Akatarawa Valley · Staglands 野生动物园
+      </div>
+      <div id="countdown-zh" class="countdown"></div>
+    </div>
+  </header>
+
+  <main>
+    <nav>
+      <a href="#our-story">💍 Our Story / 我们的故事</a>
+      <a href="#venue">📍 Venue &amp; Travel / 场地与交通</a>
+      <a href="#accommodation">🏨 Accommodation / 住宿</a>
+      <a href="#schedule">🗓️ Schedule / 流程</a>
+      <a href="#rsvp">💌 RSVP</a>
+      <a href="#gifts">💐 Gifts / 礼金</a>
+      <a href="#gallery">📷 Photos / 倒计时</a>
+    </nav>
+
+    <!-- Our Story -->
+    <section id="our-story">
+      <div class="lang-en">
+        <h2>💍 Our Story</h2>
+        <p>
+          A Kiwi boy met a Chinese girl in Aotearoa New Zealand, and somehow
+          between BBQ's, hotpot, road trips and badminton games, we
+          found home in each other.
+        </p>
+        <p>
+          We would be honoured to have you join us as we celebrate our marriage
+          surrounded by native bush, birdsong and the people we love most.
+        </p>
+      </div>
+      <div class="lang-zh">
+        <h2>💍 我们的故事</h2>
+        <p>
+          一个新西兰男孩，一个中国女孩，在奥特亚罗瓦相遇；在咖啡、火锅、公路旅行
+          和羽毛球之间，我们慢慢在彼此身上找到了“家”的感觉。
+        </p>
+        <p>
+          诚挚邀请您在大自然与鸟鸣环绕的 Staglands 一同见证并庆祝我们的婚礼，
+          您的到来对我们意义非凡。
+        </p>
+      </div>
+    </section>
+
+    <!-- Venue & Travel -->
+    <section id="venue">
+      <div class="lang-en">
+        <h2>📍 Venue &amp; Travel Information</h2>
+        <p><strong>Venue:</strong> Staglands Wildlife Reserve</p>
+        <p><strong>Address:</strong> 2362 Akatarawa Road, Akatarawa Valley, Upper Hutt 5372</p>
+        <p>
+          Staglands is a beautiful wildlife reserve set in native bush, about
+          20–30 minutes’ drive from Upper Hutt and around 1 hour from central Wellington.
+        </p>
+        <ul>
+          <li>Free parking is available on site.</li>
+          <li>The road is scenic and winding in parts — please drive carefully.</li>
+          <li>
+            Map link:
+            <a href="https://maps.app.goo.gl/2asJZBKDUtjaL1eFA?g_st=ipc" target="_blank">
+              Open in Google Maps
+            </a>
+          </li>
+        </ul>
+        <p><strong>Dress code:</strong> Semi-formal – think garden party / smart but comfortable.</p>
+        <p>
+          <strong>Plus ones, children &amp; other details:</strong><br />
+          Due to limited capacity at the venue, invitations are for the guests
+          named on the invitation only, unless otherwise stated. Please check
+          the RSVP section for more details and let us know if you’re unsure.
+        </p>
+      </div>
+      <div class="lang-zh">
+        <h2>📍 场地与交通信息</h2>
+        <p><strong>场地：</strong> Staglands 野生动物园（Staglands Wildlife Reserve）</p>
+        <p><strong>地址：</strong> 2362 Akatarawa Road, Akatarawa Valley, Upper Hutt 5372</p>
+        <p>
+          Staglands 位于原始森林间，是一个充满自然气息的野生动物园，
+          距离 Upper Hutt 市区约20–30分钟车程，距离惠灵顿市中心车程约1小时。
+        </p>
+        <ul>
+          <li>现场提供免费停车位。</li>
+          <li>部分路段较为弯曲、狭窄，请注意车速与安全。</li>
+          <li>
+            地图链接：
+            <a href="https://maps.app.goo.gl/2asJZBKDUtjaL1eFA?g_st=ipc" target="_blank">
+              点此打开谷歌地图
+            </a>
+          </li>
+        </ul>
+        <p><strong>着装要求：</strong> 半正式（Semi-formal），类似户外花园派对风格，端庄但舒适。</p>
+        <p>
+          <strong>随行嘉宾、儿童及其他说明：</strong><br />
+          由于场地容量有限，本次婚礼主要为“点名邀请制”，
+          仅限邀请函上注明的来宾参加，除非另有特别说明。
+          如对是否可以携带家人或小朋友有疑问，欢迎在 RSVP 中留言告知我们。
+        </p>
+      </div>
+    </section>
+
+    <!-- Accommodation -->
+    <section id="accommodation">
+      <div class="lang-en">
+        <h2>🏨 Accommodation Tips</h2>
+        <p>
+          If you are travelling from out of town, we recommend staying in Upper Hutt
+          or Wellington city.
+        </p>
+        <ul>
+          <li>
+            <strong>Upper Hutt:</strong> Convenient for a shorter drive to the venue.
+          </li>
+          <li>
+            <strong>Wellington CBD:</strong> Great if you’d like to explore the city before/after the wedding.
+          </li>
+        </ul>
+        <p>
+          We will share more specific hotel / Airbnb suggestions closer to the date.
+          If you need help with bookings or transport, please let us know in the RSVP form.
+        </p>
+      </div>
+      <div class="lang-zh">
+        <h2>🏨 住宿建议</h2>
+        <p>
+          如果您从外地前来，我们建议您选择入住 Upper Hutt 或惠灵顿市中心一带。
+        </p>
+        <ul>
+          <li>
+            <strong>Upper Hutt：</strong> 距离婚礼场地较近，车程更短，更方便往返。
+          </li>
+          <li>
+            <strong>Wellington 市中心：</strong> 适合想在婚礼前后顺便游览城市的来宾。
+          </li>
+        </ul>
+        <p>
+          关于具体酒店 / 民宿推荐，我们会在临近婚期时再更新说明。
+          如您需要住宿或交通方面的帮助，也可在 RSVP 表格中备注，我们会尽力协助。
+        </p>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+<section id="schedule">
+  <div class="lang-en">
+    <h2>🗓️ Schedule of the Day</h2>
+    <p><em>Times are approximate and may be adjusted slightly closer to the day.</em></p>
+    <ul>
+      <li>10:00 am – Guests arrive, welcome drinks &amp; explore the reserve</li>
+      <li>11:00 am – Ceremony</li>
+      <li>12:00 pm – Group photos &amp; animal feeding</li>
+      <li>1:00 pm – Reception, speeches &amp; lunch</li>
+      <li>Later – Cake, dancing &amp; farewells</li>
+    </ul>
+  </div>
+  <div class="lang-zh">
+    <h2>🗓️ 婚礼当天流程</h2>
+    <p><em>以下时间为大致安排，临近婚期可能会略有调整，敬请谅解。</em></p>
+    <ul>
+      <li>上午10:00 – 来宾签到、迎宾饮品，自由参观园区</li>
+      <li>上午11:00 – 证婚仪式</li>
+      <li>中午12:00 – 合影、与动物互动 / 喂食体验</li>
+      <li>下午1:00 – 宴会、致辞与午餐</li>
+      <li>随后 – 切蛋糕、跳舞与告别</li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- RSVP -->
+    <section id="rsvp">
+      <div class="two-column">
+        <div>
+          <div class="lang-en">
+            <h2>💌 RSVP</h2>
+            <p>
+              We kindly ask you to RSVP by <strong>19 December 2025</strong> so we can finalise
+              numbers, catering and transport.
+            </p>
+            <p>
+              Please complete the form and include any dietary requirements,
+              allergies or accessibility needs. If you’re unsure about plus ones or children,
+              just leave us a note and we’ll reply.
+            </p>
+          </div>
+          <div class="lang-zh">
+            <h2>💌 出席回执（RSVP）</h2>
+            <p>
+              为便于统计人数、安排餐饮和交通，
+              请您于 <strong>2025年12月19日</strong> 前提交出席回执。
+            </p>
+            <p>
+              请在下方表格中填写您的信息，并注明饮食禁忌、食物过敏、
+              及无障碍需求等。如您对随行嘉宾或儿童出席有任何疑问，
+              也欢迎在备注中写给我们，我们会单独与您确认。
+            </p>
+          </div>
+
+          <div class="lang-en">
+            <p><strong>Restrictions &amp; requirements:</strong></p>
+            <ul>
+              <li>Venue is mostly outdoor / semi-outdoor – please bring a warm layer.</li>
+              <li>Some paths are gravel / uneven – comfortable shoes recommended.</li>
+              <li>Please do not feed animals outside of designated areas / times.</li>
+            </ul>
+          </div>
+          <div class="lang-zh">
+            <p><strong>温馨提示与小小要求：</strong></p>
+            <ul>
+              <li>场地多为户外或半户外环境，请根据天气准备外套。</li>
+              <li>部分道路为石子路或不平整地面，建议穿舒适、防滑的鞋子。</li>
+              <li>除指定区域和时间外，请勿随意喂食动物，以确保安全。</li>
+            </ul>
+          </div>
+                    <div class="lang-en">
+            <p><strong>Contact Alex & Angela</strong></p>
+            <ul>
+              <li>              <a href="tel:&#43;&#54;&#52;&#50;&#55;&#51;&#49;&#57;&#54;&#54;&#56;&#51;"
+                title="Click to call me">&#43;&#54;&#52;&#32;&#50;&#55;&#32;&#51;&#49;&#57;&#32;&#54;&#54;&#56;&#51;</a></li>
+              <li>              <a href="mailto:&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                title="Click to send me an email">&#97;&#114;&#108;&#105;&#116;&#116;&#108;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <form
+            class="rsvp-form"
+            method="POST"
+            action="https://formspree.io/f/xzzypqvb"
+          >
+            <!-- IMPORTANT: replace the action URL with your own Formspree / backend endpoint -->
+
+            <label class="lang-en" for="name">Full name(s)</label>
+            <label class="lang-zh" for="name">姓名（可填写多位）</label>
+            <input type="text" id="name" name="name" required />
+
+            <label class="lang-en" for="email">Email</label>
+            <label class="lang-zh" for="email">电子邮箱</label>
+            <input type="email" id="email" name="email" required />
+
+            <label class="lang-en" for="phone">Phone (optional)</label>
+            <label class="lang-zh" for="phone">联系电话（选填）</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label class="lang-en" for="attendance">Will you be attending?</label>
+            <label class="lang-zh" for="attendance">您是否会出席？</label>
+            <select id="attendance" name="attendance" required>
+              <option value="">Please select / 请选择</option>
+              <option value="yes">Yes, joyfully accepting</option>
+              <option value="no">Sorry, unable to attend</option>
+            </select>
+
+            <label class="lang-en" for="guests">Total number of guests (including you)</label>
+            <label class="lang-zh" for="guests">总人数（含本人）</label>
+            <input type="number" id="guests" name="guests" min="1" />
+
+            <label class="lang-en" for="plusone">
+              If you have a plus one, please write their full name
+            </label>
+            <label class="lang-zh" for="plusone">
+              如有随行嘉宾，请填写对方姓名
+            </label>
+            <input type="text" id="plusone" name="plusone" />
+
+            <label class="lang-en" for="dietary">
+              Dietary requirements or allergies
+            </label>
+            <label class="lang-zh" for="dietary">
+              饮食要求或食物过敏情况
+            </label>
+            <textarea id="dietary" name="dietary"></textarea>
+
+            <label class="lang-en" for="requirements">
+              Other requirements (accessibility, transport help, etc.)
+            </label>
+            <label class="lang-zh" for="requirements">
+              其他需求（无障碍、交通协助等）
+            </label>
+            <textarea id="requirements" name="requirements"></textarea>
+
+            <label class="lang-en" for="message">Message to the couple</label>
+            <label class="lang-zh" for="message">给新人的祝福或留言</label>
+            <textarea id="message" name="message"></textarea>
+
+            <p class="helper-text lang-en">
+              By submitting this form, your RSVP will be emailed to Alexander &amp; Qing.
+            </p>
+            <p class="helper-text lang-zh">
+              提交后，您的出席回执信息将通过邮件发送给 Alexander &amp; 晴。
+            </p>
+
+            <button type="submit">
+              <span class="lang-en">Send RSVP</span>
+              <span class="lang-zh">提交 RSVP</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gifts -->
+    <section id="gifts">
+      <div class="lang-en">
+        <h2>💐 Gifts &amp; Registry</h2>
+        <p>
+          Your presence is truly the greatest gift. We know many of you are travelling
+          a long way to celebrate with us, and we are very grateful.
+        </p>
+        <p>
+          If you would still like to give a gift, a small contribution towards our
+          future home and adventures together (or a traditional red envelope) would
+          be warmly appreciated. Details will be available on the day.
+        </p>
+      </div>
+      <div class="lang-zh">
+        <h2>💐 礼金与礼物说明</h2>
+        <p>
+          对我们来说，您能在百忙之中前来参加婚礼，就是最珍贵的礼物。
+          许多亲友需要长途跋涉，我们已经心怀感激。
+        </p>
+        <p>
+          如您仍希望以礼物表达心意，欢迎以礼金 / 红包形式，
+          或为我们未来的小家与共同旅程略尽心意。具体方式与细节，
+          我们将在婚礼当天现场告知。
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery & Countdown -->
+<section id="gallery">
+  <div class="lang-en">
+    <h2>📷 Photo Gallery</h2>
+    <p>
+      We’ll add some of our favourite photos here as we get closer to the day.
+      Click any photo to view it full screen.
+    </p>
+  </div>
+  <div class="lang-zh">
+    <h2>📷 照片</h2>
+    <p>
+      随着婚期临近，我们会在这里陆续放上一些照片与我们的生活点滴。
+      点击任意照片可全屏查看。
+    </p>
+  </div>
+
+  <div class="photo-grid">
+    <!-- Replace src paths with your real images -->
+    <img
+      src="./new_images/IMG_1024.jpeg"
+      alt="Alexander &amp; Qing photo 1"
+      class="gallery-thumb"
+      data-index="0"
+    />
+    <img
+      src="./new_images/IMG_3541_2.jpeg"
+      alt="Alexander &amp; Qing photo 2"
+      class="gallery-thumb"
+      data-index="1"
+    />
+    <img
+      src="./new_images/IMG_3756_2.jpeg"
+      alt="Alexander &amp; Qing photo 3"
+      class="gallery-thumb"
+      data-index="2"
+    />
+    <img
+      src="./new_images/IMG_7689.jpg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="3"
+    />
+        <img
+      src="./new_images/IMG_7885.JPG"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="4"
+    />
+        <img
+      src="./new_images/IMG_8083_2.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="5"
+    />
+        <img
+      src="./new_images/IMG_8300.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="6"
+    />
+        <img
+      src="./new_images/IMG_8493.JPG"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="7"
+    />
+        <img
+      src="./new_images/IMG_8755_2.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="8"
+    />
+            <img
+      src="./new_images/IMG_8862_2.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="9"
+    />
+        <img
+      src="./new_images/IMG_9944_2.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="10"
+    />
+            <img
+      src="./new_images/IMG_2079.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="11"
+    />
+        <img
+
+      src="./new_images/IMG_4918_2.jpeg"
+
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="12"
+    />
+            <img
+      src="./new_images/IMG_5957.JPEG"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="13"
+    />
+        <img
+      src="./new_images/IMG_0224.jpeg"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="14"
+    />
+            <!-- <img
+      src="./FullSizeRender.JPG"
+      alt="Alexander &amp; Qing photo 4"
+      class="gallery-thumb"
+      data-index="14"
+    /> -->
+  </div>
+</section>
+
+<!-- Lightbox / carousel overlay -->
+<div id="lightboxOverlay" class="lightbox-overlay">
+  <div class="lightbox-content">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous photo">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next photo">&#10095;</button>
+
+    <img id="lightboxImage" src="" alt="Gallery image" />
+
+    <!-- Timer bar -->
+    <div class="lightbox-timer">
+      <div class="lightbox-timer-fill"></div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="lang-en">
+      With love, Alexander &amp; Qing · 19 February 2026
+    </div>
+    <div class="lang-zh">
+      谨此相邀 · Alexander &amp; 晴 · 2026年2月19日
+    </div>
+  </footer>
+
+  <script>
+    // Language toggle
+    const langToggleBtn = document.getElementById("langToggle");
+    const body = document.body;
+
+    langToggleBtn.addEventListener("click", () => {
+      const current = body.getAttribute("data-lang") || "en";
+      const next = current === "en" ? "zh" : "en";
+      body.setAttribute("data-lang", next);
+    });
+
+    // Countdown
+    function updateCountdown() {
+      // Set your wedding date & time (NZ time approx)
+      const targetDate = new Date("2026-02-19T15:00:00+13:00").getTime();
+      const now = Date.now();
+      const diff = targetDate - now;
+
+      const elEn = document.getElementById("countdown");
+      const elZh = document.getElementById("countdown-zh");
+
+      if (diff <= 0) {
+        if (elEn) elEn.textContent = "Today we say 'I do'.";
+        if (elZh) elZh.textContent = "今天，我们说“我愿意”。";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+      if (elEn) {
+        elEn.textContent = `${days} days, ${hours} hours & ${minutes} minutes to go`;
+      }
+      if (elZh) {
+        elZh.textContent = `距离婚礼还有 ${days} 天 ${hours} 小时 ${minutes} 分钟`;
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 60000); // update every minute
+
+
+    // Red envelope overlay behaviour
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.getElementById("redEnvelopeOverlay");
+  if (!overlay) return;
+
+  const openEnvelope = () => {
+    overlay.classList.add("hide");
+  };
+
+  // Click to open
+  overlay.addEventListener("click", openEnvelope);
+
+  // Auto-open after a few seconds (optional)
+  setTimeout(openEnvelope, 10000);
+});
+
+// --- Gallery lightbox / carousel ---
+(function () {
+  const thumbs = Array.from(document.querySelectorAll(".gallery-thumb"));
+  const overlay = document.getElementById("lightboxOverlay");
+  const lightboxImage = document.getElementById("lightboxImage");
+  const btnClose = document.querySelector(".lightbox-close");
+  const btnPrev = document.querySelector(".lightbox-prev");
+  const btnNext = document.querySelector(".lightbox-next");
+  const timerFill = document.querySelector(".lightbox-timer-fill");
+
+  if (!thumbs.length || !overlay || !lightboxImage) return;
+
+  let currentIndex = 0;
+  const AUTO_TIME = 5000; // ms per photo
+  let timerId = null;
+
+  function showImage(index) {
+    const safeIndex = ((index % thumbs.length) + thumbs.length) % thumbs.length;
+    currentIndex = safeIndex;
+    const src = thumbs[safeIndex].getAttribute("src");
+    const alt = thumbs[safeIndex].getAttribute("alt") || "Gallery image";
+    lightboxImage.src = src;
+    lightboxImage.alt = alt;
+    restartTimer();
+  }
+
+  function openLightbox(startIndex) {
+    overlay.classList.add("show");
+    document.body.style.overflow = "hidden"; // prevent background scroll
+    showImage(startIndex);
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove("show");
+    document.body.style.overflow = "";
+    lightboxImage.src = "";
+    clearTimer();
+  }
+
+  function nextImage() {
+    showImage(currentIndex + 1);
+  }
+
+  function prevImage() {
+    showImage(currentIndex - 1);
+  }
+
+  function clearTimer() {
+    if (timerId) {
+      clearTimeout(timerId);
+      timerId = null;
+    }
+    if (timerFill) {
+      timerFill.style.transition = "none";
+      timerFill.style.width = "0";
+    }
+  }
+
+  function restartTimer() {
+    clearTimer();
+    // force reflow so the transition restarts
+    if (timerFill) {
+      void timerFill.offsetWidth;
+      timerFill.style.transition = `width ${AUTO_TIME}ms linear`;
+      timerFill.style.width = "100%";
+    }
+    timerId = setTimeout(() => {
+      nextImage();
+    }, AUTO_TIME);
+  }
+
+  // Click thumbs to open
+  thumbs.forEach((thumb, idx) => {
+    thumb.addEventListener("click", () => {
+      openLightbox(idx);
+    });
+  });
+
+  // Controls
+  btnClose && btnClose.addEventListener("click", closeLightbox);
+  btnNext && btnNext.addEventListener("click", () => {
+    nextImage();
+  });
+  btnPrev && btnPrev.addEventListener("click", () => {
+    prevImage();
+  });
+
+  // Close when clicking outside the image
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      closeLightbox();
+    }
+  });
+
+  // Keyboard controls
+  document.addEventListener("keydown", (e) => {
+    if (!overlay.classList.contains("show")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") nextImage();
+    if (e.key === "ArrowLeft") prevImage();
+  });
+})();
+
+
+  </script>
+</body>
+</html>
